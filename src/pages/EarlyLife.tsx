@@ -28,7 +28,7 @@ const EarlyLife = () => {
                 The Early Years
               </h1>
               <p className="text-memorial-red text-xl font-cinzel tracking-wider">
-                1889 - 1918: Austria to the Trenches
+                Hitler 1889 - 1918: Austria to the Trenches
               </p>
             </div>
 
