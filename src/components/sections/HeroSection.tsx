@@ -18,7 +18,9 @@ export const HeroSection = () => {
           transition={{ duration: 2, delay: 0.5 }}
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-cinzel font-bold mb-6 tracking-tight">
-            A Painter with the Colour Red "Hitler"
+            <div>a painter with the</div>
+            <div>colour red</div>
+            <div>"hitler"</div>
           </h1>
           <motion.div
             initial={{ opacity: 0 }}
