@@ -10,17 +10,37 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-memorial-red/5 via-transparent to-memorial-dark/50 animate-pulse" style={{ animationDuration: '4s' }} />
       <div className="container mx-auto px-4 text-center z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 0.5 }}
+          transition={{ duration: 1.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-cinzel font-bold mb-6 tracking-tight">
-            <div>a painter with the</div>
-            <div>colour red</div>
-            <div>"hitler"</div>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            >
+              a painter with the
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
+              className="text-memorial-red drop-shadow-[0_0_30px_rgba(139,0,0,0.5)]"
+            >
+              colour red
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 1.1, ease: "easeOut" }}
+            >
+              "hitler"
+            </motion.div>
           </h1>
           <motion.div
             initial={{ opacity: 0 }}
