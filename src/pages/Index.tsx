@@ -9,10 +9,10 @@ const Index = () => {
         <img
           src="https://media.gettyimages.com/id/515381276/zh/%E7%85%A7%E7%89%87/adolf-hitler-closeup-shot-of-the-chancellor-speaking-over-the-radio-microphone.jpg?s=612x612&w=gi&k=20&c=JTD-yuGnQ2Dh2fNN6qtDgjwlXGOynwHRnPoMpNaGTSQ="
           alt="Central themed image"
-          className="max-w-full max-h-full object-contain opacity-75 blur-sm"
+          className="max-w-full max-h-full object-contain"
           style={{
-            filter: 'blur(1px)',
-            opacity: 0.75
+            opacity: 0.95,
+            boxShadow: 'inset 0 0 100px 50px rgba(0, 0, 0, 0.8)'
           }}
         />
       </div>
