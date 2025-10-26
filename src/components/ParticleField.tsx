@@ -16,12 +16,28 @@ export const ParticleField = () => {
       positions[i * 3 + 1] = (Math.random() - 0.5) * 60;
       positions[i * 3 + 2] = (Math.random() - 0.5) * 60;
       
-      sizes[i] = Math.random() * 0.15 + 0.05;
+      sizes[i] = Math.random() * 0.1 + 0.03;
       
-      const intensity = Math.random() * 0.5 + 0.3;
-      colors[i * 3] = intensity;
-      colors[i * 3 + 1] = intensity * 0.3;
-      colors[i * 3 + 2] = intensity * 0.3;
+      // Ash-like colors - grays, browns, subtle reds
+      const colorType = Math.random();
+      if (colorType < 0.6) {
+        // Gray ash
+        const gray = Math.random() * 0.3 + 0.3;
+        colors[i * 3] = gray;
+        colors[i * 3 + 1] = gray;
+        colors[i * 3 + 2] = gray;
+      } else if (colorType < 0.9) {
+        // Brown/sepia tone
+        const brown = Math.random() * 0.3 + 0.2;
+        colors[i * 3] = brown * 1.2;
+        colors[i * 3 + 1] = brown * 0.8;
+        colors[i * 3 + 2] = brown * 0.5;
+      } else {
+        // Subtle dark red ember
+        colors[i * 3] = 0.4;
+        colors[i * 3 + 1] = 0.05;
+        colors[i * 3 + 2] = 0.05;
+      }
     }
     
     return [positions, sizes, colors];
