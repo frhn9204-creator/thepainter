@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+  
   const scrollToNext = () => {
-    const nextSection = document.getElementById('rise');
-    nextSection?.scrollIntoView({ behavior: 'smooth' });
+    navigate('/early-life');
   };
 
   return (
