@@ -46,7 +46,7 @@ const Index = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
           <div className="relative w-20 h-20">
             <div className="absolute inset-0 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin"></div>
-            <div className="absolute inset-2 border-4 border-yellow-300 border-t-transparent rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '0.8s' }}></div>
+            <div className="absolute inset-2 border-4 border-yellow-300 border-t-transparent rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '0.75s' }}></div>
           </div>
         </div>
       )}
@@ -123,14 +123,18 @@ const Index = () => {
 
         {/* Existing components layered on top */}
         <div className="relative z-10">
-          <Scene3D />
           <HeroSection />
+          
+          {/* Credits Section */}
+          <div className="flex justify-center items-center mt-8">
+            <p className="text-gray-400 text-sm font-medium tracking-wide">built by farhan 9204</p>
+          </div>
         </div>
 
         {/* Feedback Button */}
         <button
           onClick={() => setShowModal(true)}
-          className="fixed bottom-8 right-8 z-20 px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full shadow-lg hover:shadow-2xl hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
+          className="fixed bottom-8 right-8 z-20 px-6 py-3 bg-gray-800 border border-yellow-500 text-yellow-500 font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-gray-700 hover:border-yellow-400 hover:text-yellow-400 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
         >
           Contact Us
         </button>
