@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 
 const Index = () => (
-  <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8">
+  <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8 text-center">
     <h1 className="text-2xl mb-1">a painter with the</h1>
     <h2 className="text-5xl text-red-600 font-bold mb-1">colour red</h2>
-    <h3 className="text-2xl text-yellow-500 mb-8">"hitler"</h3>
+    <h3 className="text-2xl text-yellow-500 mb-4">"hitler"</h3>
+    <p className="text-gray-500 max-w-md mb-6 text-sm">A historical documentary exploring the rise and fall of Adolf Hitler — from failed artist to dictator responsible for the deadliest conflict in human history.</p>
     <nav className="flex flex-wrap gap-3 justify-center">
       <Link to="/early-life" className="text-gray-400 hover:text-yellow-500">Early Life</Link>
       <Link to="/rise-to-power" className="text-gray-400 hover:text-yellow-500">Rise to Power</Link>
