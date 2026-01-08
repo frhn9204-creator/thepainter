@@ -14,7 +14,12 @@ const Index = () => (
       <Link to="/aftermath" className="text-gray-400 hover:text-yellow-500">Aftermath</Link>
       <Link to="/epilogue" className="text-gray-400 hover:text-yellow-500">Epilogue</Link>
     </nav>
-    <p className="text-gray-600 text-xs mt-8">built by farhan 9204</p>
+    <div className="text-gray-600 text-xs mt-8 space-y-1">
+      <p>farhan 9204</p>
+      <p>sahitya dev 9210 roll 34</p>
+      <p>ratnesh pratap 10250 roll 32</p>
+      <p>nandani 9887 roll 29</p>
+    </div>
   </div>
 );
 
