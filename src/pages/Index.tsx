@@ -15,7 +15,7 @@ const Index = () => (
       <Link to="/epilogue" className="text-gray-400 hover:text-yellow-500">Epilogue</Link>
     </nav>
     <div className="text-gray-600 text-xs mt-8 space-y-1">
-      <p>farhan 9204</p>
+      <p>farhan 9204 roll 25</p>
       <p>sahitya dev 9210 roll 34</p>
       <p>ratnesh pratap 10250 roll 32</p>
       <p>nandani 9887 roll 29</p>
