@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const Holocaust = () => (
   <div className="min-h-screen bg-black text-white p-8">
+    <PageNavigation />
     <Link to="/" className="text-yellow-500">← Home</Link>
     <h1 className="text-3xl font-bold mt-4 mb-2">The Holocaust (1941-1945)</h1>
     <p className="text-gray-400 mb-3">The Holocaust — "Shoah" in Hebrew — was the systematic, state-sponsored genocide of 6 million Jews by Nazi Germany. It also killed 5 million others: Roma, disabled people, Soviet POWs, homosexuals, Jehovah's Witnesses, and political prisoners.</p>

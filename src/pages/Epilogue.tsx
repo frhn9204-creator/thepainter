@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const Epilogue = () => (
   <div className="min-h-screen bg-black text-white p-8 flex flex-col items-center justify-center text-center">
+    <PageNavigation />
     <h1 className="text-3xl font-bold mb-4">Epilogue: Never Again</h1>
     <p className="text-gray-400 mb-3 max-w-2xl">12 years of Nazi rule. 70-85 million dead in World War II. 11 million murdered in the Holocaust — 6 million Jews and 5 million others. A continent in ruins. Millions of families torn apart forever.</p>
     <p className="text-gray-400 mb-3 max-w-2xl">Adolf Hitler rose from failed artist to absolute dictator by exploiting economic despair, spreading hatred, and destroying democratic institutions. He was enabled by millions who followed orders, looked away, or stayed silent.</p>
