@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const RiseToPower = () => (
   <div className="min-h-screen bg-black text-white p-8">
+    <PageNavigation />
     <Link to="/" className="text-yellow-500">← Home</Link>
     <h1 className="text-3xl font-bold mt-4 mb-2">Rise to Power (1919-1933)</h1>
     <p className="text-gray-400 mb-3">In September 1919, Hitler was sent by the German army to spy on the German Workers' Party (DAP). Instead, he was captivated by their nationalist ideas and joined as member #555. His fiery speeches quickly drew crowds.</p>

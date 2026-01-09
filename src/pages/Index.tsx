@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const Index = () => (
   <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8 text-center">
+    <PageNavigation />
     <h1 className="text-2xl mb-1">a painter with the</h1>
     <h2 className="text-5xl text-red-600 font-bold mb-1">colour red</h2>
     <h3 className="text-2xl text-yellow-500 mb-4">"hitler"</h3>

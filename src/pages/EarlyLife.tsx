@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const EarlyLife = () => (
   <div className="min-h-screen bg-black text-white p-8">
+    <PageNavigation />
     <Link to="/" className="text-yellow-500">← Home</Link>
     <h1 className="text-3xl font-bold mt-4 mb-2">Early Years (1889-1918)</h1>
     <p className="text-gray-400 mb-3">Adolf Hitler was born on April 20, 1889, in Braunau am Inn, a small Austrian border town. His father Alois was a strict customs official who died when Adolf was 13. His mother Klara was devoted to him — her death from cancer in 1907 devastated the young Hitler.</p>

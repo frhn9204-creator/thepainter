@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const Aftermath = () => (
   <div className="min-h-screen bg-black text-white p-8">
+    <PageNavigation />
     <Link to="/" className="text-yellow-500">← Home</Link>
     <h1 className="text-3xl font-bold mt-4 mb-2">The Aftermath</h1>
     <p className="text-gray-400 mb-3">By early 1945, Nazi Germany was collapsing. Soviet forces approached Berlin from the east; American and British forces from the west. Hitler retreated to his underground bunker beneath the Reich Chancellery.</p>

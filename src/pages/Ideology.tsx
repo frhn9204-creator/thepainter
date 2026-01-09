@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import PageNavigation from '@/components/PageNavigation';
 
 const Ideology = () => (
   <div className="min-h-screen bg-black text-white p-8">
+    <PageNavigation />
     <Link to="/" className="text-yellow-500">← Home</Link>
     <h1 className="text-3xl font-bold mt-4 mb-2">Ideology of Hatred</h1>
     <p className="text-gray-400 mb-3">Nazi ideology rested on pseudoscientific racism. Germans were "Aryans" — a mythical master race destined to rule. Jews, Roma, Slavs, Black people, and disabled individuals were "Untermenschen" (subhumans) who threatened Aryan purity.</p>
